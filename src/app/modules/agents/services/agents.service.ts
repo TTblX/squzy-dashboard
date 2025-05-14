@@ -185,6 +185,7 @@ export class AgentsService {
 
   getList() {
     console.log(this.httpClient.get<Array<Agent>>('/api/v1/agents').pipe(map((e) => e || [])))
+    
     return this.httpClient.get<Array<Agent>>('/api/v1/agents').pipe(map((e) => e || []));
   }
 
